@@ -1,75 +1,43 @@
-// const numbersArr = [, 2, 3, 4, 5];
-
-// numbersArr.forEach((number) => {
-//     console.log(number);
-// });
-// const students = [
-// {
-//     firstname:"Tina",
-//     lastName:"Guo",
-//     graduated:false,
-//     intelligent:false,
-//     smelly:false,
-//     DOB:2007,
-//     spouse:null,
-//     siblings:["tink", "tonk"],
-//     age:function () {
-//         return year-this.DOB;
-//     },
-// },
-// {
-//     firstname:"Vincent",
-//     lastName:"Meimei",
-//     graduated:false,
-//     intelligent:false,
-//     smelly:false,
-//     DOB:2007,
-//     spouse:null,
-//     siblings:["victor", "veronica"],
-//     age:function () {
-//         return year-this.DOB;
-//     },
-// },
-// {
-//     firstname:"pizza",
-//     lastName:"chicken",
-//     graduated:false,
-//     intelligent:false,
-//     smelly:false,
-//     DOB:2007,
-//     spouse:null,
-//     siblings:["victor", "veronica"],
-//     age:function () {
-//         return year-this.DOB;
-//     },
-// },
-// {
-//     firstname:"pasta",
-//     lastName:"pork",
-//     graduated:false,
-//     intelligent:false,
-//     smelly:false,
-//     DOB:2007,
-//     spouse:null,
-//     siblings:["victor", "veronica"],
-//     age:function () {
-//         return year-this.DOB;
-//     },
-// },
-// ];
-
-
-// students.forEach((student) => console.log(student.firstname));
-
-const a = 
+const apple = 
 {
     name:"apple",
     delicious:true,
     healthy:true,
     sweet:true,
-    spouse:null,
-    siblings:["peach", "tonpeark"],
-    age:function () {
-        return year-this.DOB;
+    round:true,
+    siblings:["peach", "pear"],
     }
-}
+const pomegranate =
+{
+    name:"pomegranate",
+    delicious:NaN,
+    healthy:true,
+    sweet:false,
+    round:true,
+    siblings:["guava"],
+    }
+const banana =
+{
+    name:"banana",
+    delicious:true,
+    healthy:true,
+    sweet:true,
+    round:false,
+    siblings:["plaintain"],
+    }
+const lemon =
+{
+    name:"lemon",
+    delicious:false,
+    healthy:true,
+    sweet:false,
+    round:true,
+    siblings:["lime","orange"],
+    }
+
+let fruits = [apple, pomegranate, banana, lemon];
+fruits.forEach((fruit) => console.log(fruit.name));
+fruits.forEach((fruit)=>console.log(fruit.name,fruit.siblings,));
+// const good = fruits.filter(fruit => {
+//   return fruit.delicious.includes("true");
+// });
