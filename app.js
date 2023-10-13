@@ -1,7 +1,7 @@
 const apple = 
 {
     name:"apple",
-    delicious:true,
+    delicious:"very",
     healthy:true,
     sweet:true,
     round:true,
@@ -37,7 +37,7 @@ const lemon =
 
 let fruits = [apple, pomegranate, banana, lemon];
 fruits.forEach((fruit) => console.log(fruit.name));
-fruits.forEach((fruit)=>console.log(fruit.name,fruit.siblings,));
+fruits.forEach((fruit)=>console.log(fruit.name,fruit.siblings,fruit.delicious,fruit.healthy,fruit.sweet,fruit.round));
 // const good = fruits.filter(fruit => {
 //   return fruit.delicious.includes("true");
 // });
