@@ -1,43 +1,46 @@
-const apple = 
+const fruits=[
+    apple = 
 {
     name:"apple",
-    delicious:"very",
-    healthy:true,
-    sweet:true,
-    round:true,
+    delicious:"good",
+    healthy:"super healthy",
+    sweet:"very sweet",
+    round:"roundish",
     siblings:["peach", "pear"],
-    }
-const pomegranate =
+    },
+pomegranate =
 {
     name:"pomegranate",
-    delicious:NaN,
-    healthy:true,
-    sweet:false,
-    round:true,
+    delicious:"idk if it's great",
+    healthy:"healthy",
+    sweet:"sometimes sweet",
+    round:"roundish",
     siblings:["guava"],
-    }
-const banana =
+    },
+banana =
 {
     name:"banana",
-    delicious:true,
-    healthy:true,
-    sweet:true,
-    round:false,
-    siblings:["plaintain"],
-    }
-const lemon =
+    delicious:"good",
+    healthy:"healthy",
+    sweet:"sweet",
+    round:"crescent",
+    siblings:["plantain"],
+    },
+lemon =
 {
-    name:"lemon",
-    delicious:false,
-    healthy:true,
-    sweet:false,
-    round:true,
+    name:'lemon',
+    delicious:"nasty",
+    healthy:"decently healthy",
+    sweet:"sour",
     siblings:["lime","orange"],
     }
-
-let fruits = [apple, pomegranate, banana, lemon];
+]
 fruits.forEach((fruit) => console.log(fruit.name));
-fruits.forEach((fruit)=>console.log(fruit.name,fruit.siblings,fruit.delicious,fruit.healthy,fruit.sweet,fruit.round));
-// const good = fruits.filter(fruit => {
-//   return fruit.delicious.includes("true");
-// });
+fruits.forEach((fruit) => fruit.siblings.forEach((siblings) => console.log(siblings)));
+fruits.forEach((fruit) => console.log(fruit.delicious));
+fruits.forEach((fruit) => console.log(fruit.healthy));
+fruits.forEach((fruit) => console.log(fruit.sweet));
+
+const mid = fruits.filter((fruit) => fruit.delicious !== "good")
+console.log(mid)
+
